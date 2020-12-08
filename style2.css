@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  /*
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 %);*/
+  background: radial-gradient(#232526, #414245);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . . . . . . ."
+    ". container container container container container container container ."
+    ". . box1 box2 box3 box3 box4 . ."
+    ". . box1 box5 box5 box6 box7 . ."
+    ". . box8 box5 box5 box9 box9 . ."
+    ". . . . . . . . .";
+  gap: 0.5em;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  grid-area: container;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#text,
+#shadow {
+  background: none;
+  font-weight: 500;
+  font-size: 70px;
+  letter-spacing: 20px;
+  font-family: "Bad Script", cursive;
+  color: #fff;
+}
+
+#text {
+  color: #333;
+}
+
+#shadow {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff,
+    0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+}
+
+#glow {
+  animation: neon1 linear infinite 2s;
+  will-change: opacity;
+}
+
+#blink {
+  animation: blink linear infinite 2s;
+}
+
+@keyframes neon1 {
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes blink {
+  70% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+  92.5% {
+    opacity: 1;
+  }
+}
+
+.box1 {
+  grid-area: box1;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+  writing-mode: sideways-lr;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.box2 {
+  grid-area: box2;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.box3 {
+  grid-area: box3;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.box4 {
+  grid-area: box4;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.box5 {
+  grid-area: box5;
+  background: radial-gradient(#ffb347, #ffcc33);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  background-position: center;
+  border-radius: 10px;
+}
+.box5 img {
+  width: 180px;
+  margin-left: 12px;
+}
+.box6 {
+  grid-area: box6;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.box7 {
+  grid-area: box7;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.box8 {
+  grid-area: box8;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.box9 {
+  grid-area: box9;
+  background: radial-gradient(#ffb347, #ffcc33);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+}
