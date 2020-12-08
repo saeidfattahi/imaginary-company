@@ -17,7 +17,7 @@
     ". . . . .";
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(#ffb347, #ffcc33);
+  background: linear-gradient(#ffb347, #ffcc33);
   gap: 0.7em;
 }
 
@@ -40,7 +40,7 @@
   text-align: center;
   padding-top: 11px;
   border: solid 3px #414245;
-  border-radius: 5px;
+  border-radius: 20px 5px 5px 5px;
 }
 
 .box2 {
@@ -51,7 +51,7 @@
   text-align: center;
   padding-top: 11px;
   border: solid 3px #414245;
-  border-radius: 5px;
+  border-radius: 5px 20px 5px 5px;
 }
 
 .box3 {
@@ -80,7 +80,7 @@
   font-size: 24px;
   text-align: center;
   border: solid 3px #414245;
-  border-radius: 5px;
+  border-radius: 5px 5px 5px 20px;
 }
 .box5 {
   grid-area: box5;
@@ -104,7 +104,7 @@
   text-align: center;
   padding-top: 25px;
   border: solid 3px #414245;
-  border-radius: 5px;
+  border-radius: 5px 5px 20px 5px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
@@ -118,7 +118,7 @@
   font-family: "Fira Mono", monospace;
   letter-spacing: -7px;
 
-  margin-top: 25px;
+  margin-top: 1px;
 }
 
 @keyframes glitch {
