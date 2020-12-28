@@ -9,12 +9,12 @@
   grid-template-rows: 0.1fr 1fr 0.7fr 1fr 0.7fr 0.5fr;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
-    "icon . . . ."
+    "icon nav nav nav ."
     ". logo logo logo ."
     ". box1 box2 box2 ."
     ". box3 box3 box3 ."
     ". box4 box5 box6 ."
-    ". . . . .";
+    ". footer footer footer .";
   height: 100vh;
   width: 100vw;
   background: linear-gradient(#ffb347, #ffcc33);
@@ -29,6 +29,27 @@
   width: 25%;
   opacity: 0.7;
   margin-left: 5px;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Play", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.nav a {
+  text-decoration: none;
+  display: flex;
+  margin: 0 2rem;
+  color: inherit;
+}
+.nav a:hover {
+  /*background-color: #ef4823;*/
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .box1 {
@@ -179,4 +200,15 @@
   62% {
     transform: translate(-22px, 5px) skew(21deg);
   }
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 10px;
 }
